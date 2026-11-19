@@ -1,137 +1,150 @@
-::: {align="center"}
+
+<div align="center">
+
 # ✨ LeadFlow AI
 
 ### Discover Better Leads. Create Smarter Outreach. Manage Campaigns.
 
-**An AI-assisted lead generation and sales outreach platform**
+**An AI-Assisted Lead Generation & Sales Outreach Platform**
 
-Find prospects, explore lead insights, prepare personalized outreach,
-and organize campaigns through one unified workspace.
+Find prospects, explore lead insights, generate personalized outreach messages, and organize campaigns — all in one unified workspace.
 
-`<br/>`{=html}
+<br/>
 
 ![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Python](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Gemini](https://img.shields.io/badge/AI-Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-:::🌟 Overview
-LeadFlow AI is a web-based platform built to simplify the prospect
-discovery and sales outreach workflow. It brings lead search,
-AI-assisted conversations, personalized message generation, and campaign
-organization together in one application.
 
-The platform combines a React frontend, a FastAPI backend,
-PostgreSQL data storage through SQLAlchemy, and Google Gemini
-for conversational assistance and outreach-message generation.
-The idea: make it easier to move from discovering a potential
-customer to preparing a relevant, personalized outreach message.
+</div>
 
-⚡ What You Can Do with LeadFlow AI
-<table>
-<tr>
-<td width="50%">
-🔎 Discover Leads
-Search prospect records using job titles, company or person names, and
-locations. Review contact details and lead scores.
-</td>
-<td width="50%">
-🤖 Ask the AI Assistant
-Use a conversational interface for lead-search requests,
-outreach-related prompts, and general questions.
-</td>
-</tr>
-<tr>
-<td width="50%">
-✉️ Prepare Personalized Outreach
-Generate an AI-assisted message for a selected lead, then review, edit,
-and copy the result.
-</td>
-<td width="50%">
-📣 Organize Campaigns
-Create and manage campaign records, search campaigns, view generated
-messages, and export campaign information.
-</td>
-</tr>
-</table>
-🚀 Features
-📊 Dashboard
-- Overview interface with summary statistic cards.
+---
+
+## 🌟 Overview
+
+**LeadFlow AI** is a web-based platform designed to simplify the prospect discovery and sales outreach process.
+
+It brings lead search, AI-powered conversations, personalized message generation, and campaign management together in a single application.
+
+The platform combines a modern **React frontend**, a **FastAPI backend**, **PostgreSQL** database integration through SQLAlchemy, and **Google Gemini AI** for conversational assistance and personalized outreach generation.
+
+The goal is simple: help users move from discovering potential customers to preparing relevant, personalized outreach more efficiently.
+
+---
+
+## ⚡ What Can You Do with LeadFlow AI?
+
+| Feature | Description |
+|---|---|
+| 🔎 Lead Discovery | Search and explore prospects using job titles, company names, person names, and locations. |
+| 🤖 AI Assistant | Interact with an AI-powered chatbot for lead-search requests and general assistance. |
+| ✉️ AI Message Generation | Generate personalized outreach messages based on selected lead information. |
+| 📣 Campaign Management | Create, view, search, and manage campaign records. |
+| 📊 Dashboard | Explore dashboard statistics and visual representations of campaign and lead information. |
+| 🔐 Authentication | Access registration, login, OTP verification, and password recovery interfaces. |
+
+---
+
+## 🚀 Key Features
+
+### 📊 1. Interactive Dashboard
+- Overview of lead and campaign statistics.
 - Lead-growth and conversion chart visualizations.
-- Quick navigation to lead search, email generation, AI assistant, and
-  campaigns.
-<sub>{=html}Note: Dashboard summary figures and chart data are
-currently demonstration values in the frontend.`</sub>`{=html}
-🔍 Lead Search & Management
+- Quick navigation to important application modules.
+- Organized dashboard interface for accessing key features.
+
+### 🔍 2. Lead Search & Management
 - Browse lead records stored in the backend database.
-- Search by job title, company, person, and location.
-- Filter backend search results by job title, location, and minimum
-  lead score.
-- View prospect details such as name, company, role, location, email,
-  LinkedIn URL, and score.
-- Classify leads using their stored score:
-  Lead category            Score
-  🔥 Hot            90 and above
-⚡ Warm                 70--89
-❄️ Cold               Below 70
+- Search prospects by:
+  - Job title
+  - Company name
+  - Person name
+  - Location
+- Filter backend search results using job title, location, and minimum lead score.
+- View prospect details, including name, company, role, location, email, LinkedIn URL, and score.
+- Categorize prospects based on their lead scores.
+
+**Lead Classification**
+
+| Category | Score |
+|---|---:|
+| 🔥 Hot Lead | 90 and above |
+| ⚡ Warm Lead | 70–89 |
+| ❄️ Cold Lead | Below 70 |
+
 - Save selected leads in browser local storage.
-- Export filtered lead results as CSV.
-🤖 AI Assistant
-- Conversational chat interface powered by Google Gemini.
-- Detects lead-search requests and extracts job-title/location
-  filters.
+- Export filtered lead results as CSV files.
+
+### 🤖 3. AI-Powered Assistant
+- Conversational interface powered by Google Gemini.
+- Understands lead-search requests through intent detection.
+- Extracts job-title and location filters from user queries.
 - Retrieves matching lead records from the database.
 - Handles outreach-related prompts.
-- Uses Gemini for general conversational responses.
-✉️ AI Email Generation
-- Select a lead from available records.
-- Generate a personalized outreach message using Google Gemini.
-- Edit the generated message.
-- Copy the message to the clipboard.
-Implementation note: The /send-email endpoint currently logs the
-supplied recipient, subject, and message in the backend console and
-returns a response. It does not deliver an actual email yet.
-📣 Campaign Management
-- Create and store campaign records through the backend API.
-- View and search campaigns by campaign name, company, or job title.
-- View a campaign's generated message.
+- Generates conversational responses for general questions.
+
+### ✉️ 4. AI-Powered Email Generation
+- Select a prospect from available lead records.
+- Generate personalized outreach messages using Google Gemini.
+- Review and edit generated messages.
+- Copy generated content for further use.
+
+### 📣 5. Campaign Management
+- Create and store campaign records.
+- View and search existing campaigns.
+- Search campaigns using campaign name, company, or job title.
+- View generated campaign messages.
 - Download campaign information as CSV.
 - Delete campaign records.
-🔐 Account & Authentication Interfaces
+
+### 🔐 6. Authentication & Account Management
 - User registration and login.
-- Password hashing and login verification.
-- Email OTP verification flow.
+- Password hashing and verification.
+- Email OTP verification workflow.
 - JWT access-token generation.
-- Forgot-password and OTP-based password-reset flow.
+- Forgot-password functionality.
+- OTP-based password-reset workflow.
 - Settings interface for profile and application preferences.
-🧰 Tech Stack
-  Layer                      Technologies
-  Frontend                   React, JavaScript, Vite
-Styling & UI               Tailwind CSS, Framer Motion, Lucide React
-Charts                     Recharts
-Routing                    React Router
-HTTP Client                Axios
-Backend                    Python, FastAPI
-Database ORM               SQLAlchemy
-Database                   PostgreSQL
-AI Integration             Google Gemini (gemini-2.5-flash)
-Authentication Utilities   Passlib, JWT (python-jose)
-Email Utility              Python SMTP, python-dotenv
-Data Handling              CSV, Pandas
-🏗️ Project Structure
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React 19, JavaScript, Vite |
+| Styling | Tailwind CSS 4 |
+| UI & Animations | Framer Motion, Lucide React |
+| Charts | Recharts |
+| Routing | React Router |
+| HTTP Client | Axios |
+| Backend | Python, FastAPI |
+| Database | PostgreSQL |
+| ORM | SQLAlchemy |
+| AI Integration | Google Gemini (`gemini-2.5-flash`) |
+| Authentication | Passlib, JWT (`python-jose`) |
+| Email Utility | Python SMTP, python-dotenv |
+| Data Processing | CSV, Pandas |
+
+---
+
+## 🏗️ Project Structure
+
+```text
 LeadFlow-AI/
 │
 ├── backend/
 │   ├── main.py                  # FastAPI application and API routes
-│   ├── database.py              # SQLAlchemy engine and DB session
-│   ├── models.py                # Database models
-│   ├── schemas1.py              # Request schemas
+│   ├── database.py              # Database connection and sessions
+│   ├── models.py                # SQLAlchemy database models
+│   ├── schemas1.py              # Request and response schemas
 │   ├── auth.py                  # Password hashing and verification
-│   ├── jwt_handler.py           # JWT access-token creation
-│   ├── gemini_service.py        # Gemini chat, filters and email generation
+│   ├── jwt_handler.py           # JWT token generation
+│   ├── gemini_service.py        # Gemini AI integration
 │   ├── intent.py                # Chat intent detection
-│   ├── intent_service.py        # Additional intent detection logic
-│   ├── filter_service.py        # Job/location filter extraction
+│   ├── intent_service.py        # Additional intent logic
+│   ├── filter_service.py        # Job and location filter extraction
 │   ├── csv_service.py           # CSV-based lead search
 │   ├── email_service.py         # SMTP email utility
 │   ├── utils.py                 # OTP and helper functions
@@ -144,132 +157,198 @@ LeadFlow-AI/
 │       ├── components/          # Reusable UI components
 │       ├── pages/               # Application pages
 │       ├── services/
-│       │   └── api.js           # Backend API client
-│       ├── App.jsx              # Frontend routes
+│       │   └── api.js           # Backend API integration
+│       ├── App.jsx              # Application routes
 │       ├── App.css
 │       ├── index.css
 │       └── main.jsx
 │
 ├── package.json
 └── README.md
-⚙️ Getting Started
-Follow these steps to run LeadFlow AI locally.
-Prerequisites
-Make sure you have the following installed:
+```
+
+---
+
+## ⚙️ Getting Started
+
+Follow these instructions to run LeadFlow AI locally.
+
+### 📌 Prerequisites
+
+Make sure you have installed:
+
 - Node.js and npm
-- Python (Python 3.10+ recommended)
+- Python 3.10+
 - PostgreSQL
-- A Google Gemini API key
-1. Clone the repository
+- Google Gemini API key
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
+
 cd LeadFlow-AI
-Replace <YOUR_GITHUB_REPOSITORY_URL> with your repository URL.
-2. Configure PostgreSQL
-Create a PostgreSQL database named leadflow_ai.
+```
 
-The current database connection is configured in backend/database.py.
-Update the connection details to match your local PostgreSQL username,
-password, host, port, and database.
-3. Configure environment variables and credentials
-Before running or publishing the application:
-- Move the Gemini API key out of backend/gemini_service.py and load
-  it from an environment variable.
-- Move the database connection string out of backend/database.py and
-  load it from an environment variable.
-- The email utility reads EMAIL_ADDRESS and EMAIL_PASSWORD from
-  backend/.env.
-Example configuration:
+Replace `<YOUR_GITHUB_REPOSITORY_URL>` with your actual GitHub repository URL.
+
+### 2️⃣ Configure PostgreSQL
+
+Create a PostgreSQL database named:
+
+```sql
+CREATE DATABASE leadflow_ai;
+```
+
+The current database connection is configured in:
+
+```text
+backend/database.py
+```
+
+Update the database connection details according to your local PostgreSQL configuration.
+
+### 3️⃣ Configure Environment Variables
+
+Before running the application, configure your credentials securely.
+
+Example environment configuration:
+
+```env
 GEMINI_API_KEY=your_gemini_api_key
+
 DATABASE_URL=postgresql://username:password@localhost:5432/leadflow_ai
+
 EMAIL_ADDRESS=your_email_address
+
 EMAIL_PASSWORD=your_email_app_password
-Create backend/.env for the email settings. Update gemini_service.py
-and database.py to read GEMINI_API_KEY and DATABASE_URL from the
-environment before relying on those variables.
-Security: Never commit .env files, API keys, database passwords,
-JWT secrets, or email credentials. Rotate any credentials that may
-already have been exposed or committed.
+```
 
-4. Set up and run the backend
-Open a terminal:
+**Important configuration notes:**
+
+- Move the Gemini API key from `gemini_service.py` into an environment variable.
+- Configure `database.py` to read the database URL from the environment.
+- The email utility reads `EMAIL_ADDRESS` and `EMAIL_PASSWORD` from `backend/.env`.
+- Update the backend code to load the Gemini and database environment variables before relying on this configuration.
+
+⚠️ **Security:** Never commit API keys, database passwords, JWT secrets, or `.env` files to GitHub. Rotate any credentials that may already have been exposed.
+
+### 4️⃣ Run the Backend
+
+Navigate to the backend directory:
+
+```bash
 cd backend
+```
+
+Create a Python virtual environment:
+
+```bash
 python -m venv venv
-Activate the virtual environment.
+```
 
-Windows PowerShell
+Activate the environment.
+
+**Windows PowerShell:**
+
+```bash
 .\venv\Scripts\Activate.ps1
-macOS / Linux
+```
+
+**macOS / Linux:**
+
+```bash
 source venv/bin/activate
+```
+
 Install the principal backend dependencies:
+
+```bash
 pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic python-dotenv google-generativeai "passlib[bcrypt]" "python-jose[cryptography]" pandas
-Start the API server from the backend directory:
+```
+
+Start the FastAPI server:
+
+```bash
 uvicorn main:app --reload --port 8000
-Backend base URL: http://127.0.0.1:8000
+```
 
-Interactive API documentation: http://127.0.0.1:8000/docs
-The supplied backend/requirements.txt should be reviewed and updated
-to include all packages imported by the backend.
+Backend URL:
 
-5. Set up and run the frontend
-Open a second terminal:
+```text
+http://127.0.0.1:8000
+```
+
+Interactive API documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+### 5️⃣ Run the Frontend
+
+Open a new terminal and navigate to the frontend directory:
+
+```bash
 cd frontend
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
-Open the local URL printed by Vite. The current frontend API client
-expects the backend at http://127.0.0.1:8000.
-🔌 Backend API
-The following routes are defined in the current FastAPI application.
-  Method                  Endpoint                     Purpose
-  GET                   /                          Backend health/message
+```
 
-  POST                  /register                  Register a user and
-initiate OTP
-verification
+Open the local URL displayed by Vite in your browser.
 
-  POST                  /verify-otp                Verify a user's email
-OTP
+The frontend API client currently expects the backend at:
 
-  POST                  /login                     Authenticate a user and
-issue a JWT
+```text
+http://127.0.0.1:8000
+```
 
-  POST                  /search-leads              Search CSV lead data by
-skill
+---
 
-  GET                   /leads                     Retrieve lead records
+## 🔌 Backend API Endpoints
 
-  GET                   /search                    Search database leads
-by job, location, and
-minimum score
+The following endpoints are defined in the current FastAPI application.
 
-  POST                  /generate-message          Generate an AI outreach
-message and save a
-campaign record
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/` | Backend health/message |
+| POST | `/register` | Register a user and initiate OTP verification |
+| POST | `/verify-otp` | Verify email OTP |
+| POST | `/login` | Authenticate user and issue JWT |
+| POST | `/search-leads` | Search CSV lead data |
+| GET | `/leads` | Retrieve lead records |
+| GET | `/search` | Search database leads using filters |
+| POST | `/generate-message` | Generate AI outreach message and save campaign |
+| POST | `/chat` | Process chatbot requests |
+| GET | `/campaigns` | Retrieve campaigns |
+| POST | `/campaigns` | Create a campaign |
+| DELETE | `/campaigns/{campaign_id}` | Delete a campaign |
+| POST | `/send-email` | Accept email details; currently logs them |
+| POST | `/forgot-password` | Initiate password-reset OTP |
+| POST | `/reset-password` | Reset password using OTP |
 
-  POST                  /chat                      Process chatbot
-requests
+---
 
-  GET                   /campaigns                 Retrieve campaigns
+## 🔄 Application Workflow
 
-  POST                  /campaigns                 Create a campaign
-
-  DELETE                /campaigns/{campaign_id}   Delete a campaign
-
-  POST                  /send-email                Accept email details;
-currently logs them
-rather than delivering
-email
-
-  POST                  /forgot-password           Initiate password-reset
-OTP
-POST                  /reset-password            Reset password using
-OTP
-🔄 Application Workflow
 ```mermaid
 flowchart TD
-    A["LeadFlow AI Dashboard"] --> B["Lead Search"]
+    A["LeadFlow AI Dashboard"]
+
+    A --> B["Lead Search"]
     A --> C["AI Assistant"]
     A --> D["Campaign Management"]
-    A --> E["AI Email Generation"]
+    A --> E["AI Message Generation"]
 
     B --> F["FastAPI Backend"]
     C --> F
@@ -277,34 +356,47 @@ flowchart TD
     E --> F
 
     F --> G[("PostgreSQL Database")]
-    F --> H["Google Gemini"]
+    F --> H["Google Gemini AI"]
     F --> I["OTP / Email Utility"]
 ```
-🔒 Security & Project Status
-LeadFlow AI is currently a development project. Before production
-deployment, review and strengthen the following:
-- Store API keys, database credentials, JWT signing secrets, and email
-  credentials securely in environment variables or a secrets manager.
-- Rotate credentials that have previously been committed or shared.
-- Add and verify authentication and authorization on protected API
-  routes.
-- Configure CORS for the intended deployment origins.
+
+---
+
+## 🔒 Security & Implementation Notes
+
+LeadFlow AI is currently a development project. Some features require further implementation and testing before production deployment.
+
+- Secure API keys, database credentials, JWT secrets, and email credentials using environment variables or a secrets manager.
+- Add and verify authentication and authorization on protected API routes.
+- Configure CORS for the intended deployment environment.
 - Add rate limiting and strengthen OTP handling.
-- Implement and test actual email delivery before describing the email
-  workflow as automated.
-- Replace demonstration dashboard figures with values calculated from
-  real application data.
-- Validate inputs and test backend endpoints before deployment.
-🎯 Project Goal
-LeadFlow AI aims to bring prospect discovery, AI-assisted
-communication, and campaign organization into one streamlined
-workflow---helping users spend less time on repetitive sales tasks and
-more time building meaningful customer relationships.
-::: {align="center"}
+- Implement and test actual email delivery before enabling automated outreach.
+- Replace demonstration dashboard statistics with values calculated from real application data.
+- Validate inputs and thoroughly test backend endpoints.
+- Review `requirements.txt` to ensure all imported backend dependencies are included.
 
-------------------------------------------------------------------------
+**Current implementation notes:**
+- Dashboard statistics and chart data are demonstration values.
+- Selected leads are saved in browser local storage.
+- The `/send-email` endpoint currently logs the recipient, subject, and message in the backend console instead of delivering an actual email.
+- Gemini and database environment-variable configuration requires the code updates described above.
 
-### Built to make lead generation and outreach more organized with AI.
+---
 
-**LeadFlow AI --- Find. Connect. Convert.** ✨
-:::
+## 🎯 Project Goal
+
+LeadFlow AI aims to bring prospect discovery, AI-assisted communication, and campaign organization into one streamlined workflow.
+
+By combining intelligent assistance with organized lead management, the platform aims to reduce repetitive sales tasks and help users focus on building meaningful customer relationships.
+
+---
+
+<div align="center">
+
+## ✨ LeadFlow AI
+
+### Find. Connect. Convert.
+
+**Built to make lead generation and outreach more organized with AI.**
+
+</div>
